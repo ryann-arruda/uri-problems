@@ -89,7 +89,7 @@ public class Main {
 		for(int i = 0; i < dimension; i++) {
 			for(int j = 0; j < dimension; j++) {
 				
-				// Printing the last line numbers (j < dimension 
+				// Printing the last line numbers (j == dimension - 1)
 				if(j == dimension - 1) {
 					System.out.println(String.format("%d", M[i][j]));
 				}
