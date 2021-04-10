@@ -11,14 +11,14 @@ public class Main {
 			int dimension = sc.nextInt();
 			int[][] M = new int[dimension][dimension];
 			
-			matrixFill(M, dimension);
-			matrixPrinting(M, dimension);
+			fillMatrix(M, dimension);
+			printMatrix(M, dimension);
 		} 
 		
 		sc.close();
 	}
 	
-	public static void matrixFill(int[][] M, int dimension) {
+	public static void fillMatrix(int[][] M, int dimension) {
 		int referenceNumber = dimension/2;
 		
 		// Fills the central cell of the matrix
@@ -84,7 +84,7 @@ public class Main {
 		}
 	}
 	
-	public static void matrixPrinting(int[][] M, int dimension) {
+	public static void printMatrix(int[][] M, int dimension) {
 		
 		for(int i = 0; i < dimension; i++) {
 			for(int j = 0; j < dimension; j++) {
