@@ -13,40 +13,8 @@ public class Main {
 			int[][] M = new int[N][N];
 			
 			if(N != 0) {				
-				matrixFill(M, N);
-				
-				// Printing the matrix
-				for(int i = 0; i < N; i++) {
-					
-					for(int j = 0; j < N; j++) {
-						
-						if(N == 1) {
-							System.out.println("  " + M[i][j]);
-						}
-						
-						else if(j == 0) {
-							System.out.print("  " + M[i][j] + "   ");						
-						}
-						
-						else if (j > 0 && j < N - 1) {
-							
-							// If the number has 2 decimal places it will be 2 spaces
-							if(M[i][j + 1] >= 10) {
-								System.out.print(M[i][j] + "  ");
-							}
-							
-							else {
-								System.out.print(M[i][j] + "   ");
-							}
-						}
-						
-						else {
-							System.out.println(M[i][j]);
-						}
-					}
-				}
-				
-				System.out.println();
+				fillMatrix(M, N);
+				printMatrix(M, N);
 			}
 			
 		}while(N != 0);
@@ -54,7 +22,7 @@ public class Main {
 		sc.close();
 	}
 	
-	public static void matrixFill(int[][] M, int N) {
+	public static void fillMatrix(int[][] M, int N) {
 		int referenceNumber = N/2;
 		
 		// Correcting "referenceNumber" for odd numbers
@@ -89,5 +57,39 @@ public class Main {
 				M[i][j] = j + 1;
 			}
 		}
+	}
+	
+	public static void printMatrix(int[][] M, int N) {
+		for(int i = 0; i < N; i++) {
+			
+			for(int j = 0; j < N; j++) {
+				
+				if(N == 1) {
+					System.out.println("  " + M[i][j]);
+				}
+				
+				else if(j == 0) {
+					System.out.print("  " + M[i][j] + "   ");						
+				}
+				
+				else if (j > 0 && j < N - 1) {
+					
+					// If the number has 2 decimal places it will be 2 spaces
+					if(M[i][j + 1] >= 10) {
+						System.out.print(M[i][j] + "  ");
+					}
+					
+					else {
+						System.out.print(M[i][j] + "   ");
+					}
+				}
+				
+				else {
+					System.out.println(M[i][j]);
+				}
+			}
+		}
+		
+		System.out.println();
 	}
 }
