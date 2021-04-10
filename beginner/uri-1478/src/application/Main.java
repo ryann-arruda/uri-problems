@@ -15,8 +15,8 @@ public class Main {
 			if(N != 0){
     			int[][] M = new int[N][N];
     			
-    			matrixFill(M, N);
-    			matrixPrinting(M, N);
+    			fillMatrix(M, N);
+    			printMatrix(M, N);
 		    }   
 
 		} while (N != 0);
@@ -24,7 +24,7 @@ public class Main {
 		sc.close();
 	}
 	
-	public static void matrixFill(int[][] M, int N) {
+	public static void fillMatrix(int[][] M, int N) {
 		
 		for(int k = 0; k < N; k++) {
 			
@@ -38,7 +38,7 @@ public class Main {
 		}
 	}
 	
-	public static void matrixPrinting(int[][] M, int N) {
+	public static void printMatrix(int[][] M, int N) {
 		
 		for(int i = 0; i < N; i++) {
 			
