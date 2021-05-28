@@ -42,7 +42,7 @@ public class Main {
 		sc.close();
 	}
 	
-	public static String listReverse(List<Integer> originalList) {
+	public static String answerFormatter(List<Integer> originalList) {
 		String aux = "";
 		
 		for(int i = originalList.size() - 1; i >= 0; i--) {
