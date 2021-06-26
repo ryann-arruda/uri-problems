@@ -13,12 +13,12 @@ public class Main {
 		A = sc.nextDouble();
 		B = sc.nextDouble();
 		
-		System.out.println(increasePercentage(A,B));
+		System.out.println(increaseOf(A,B));
 		
 		sc.close();
 	}
 	
-	public static String increasePercentage(double originalValue, double newValue) {
+	public static String increaseOf(double originalValue, double newValue) {
 		double result = 0.0;
 		
 		result = (newValue * 100.0)/originalValue;
